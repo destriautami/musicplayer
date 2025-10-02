@@ -8,6 +8,14 @@ body {
   margin: 0;
 }
 
+.cover { 
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .music-container {
   display: flex;
   flex-direction: column; /* Menyusun durations di atas player */
@@ -71,7 +79,7 @@ body {
 .control {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 0;
   gap: 15px;
 }
 /*tombol kontrol*/
@@ -95,6 +103,18 @@ button {
 /* tombol spesifik */
 .btn-play {
   background-image: url("assets/play-button.png");
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+}
+
+/* ketika play */
+.btn-play.playing {
+  background-image: url("assets/pause.png");
 }
 
 .btn-next {
@@ -104,6 +124,8 @@ button {
 .btn-prev {
   background-image: url("assets/back.png");
 }
+
+
 
 button:active {
   box-shadow: none;

@@ -2,11 +2,14 @@
   "name": "music_player",
   "version": "1.0.0",
   "description": "Simple music player using Electron",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "keywords": ["music","music_player"],
+  "keywords": [
+    "music",
+    "music_player"
+  ],
   "author": "Destria",
   "license": "ISC",
   "devDependencies": {
