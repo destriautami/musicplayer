@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- progress bar -->
+    <div class="durations">
+      <input type="range" min="0" max="0" value="0" class="progress" />
+    </div>
+    <!-- player box -->
+    <div class="player">
+      <div class="cover"></div>
+      <div class="title"></div>
+      <div class="control">
+        <button class="btn-prev"></button>
+        <button class="btn-play"></button>
+        <button class="btn-next"></button>
+      </div>
+    </div>
+    <script>
+      document.getElementById("btn").addEventListener("click", () => {
+        window.electronAPI.loadPage("another.html");
+      });
+    </script>
+  </body>
+</html>
