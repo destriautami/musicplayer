@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #a7aae1;
@@ -59,16 +61,47 @@ body {
   margin: 0 auto 15px auto;
 }
 
+
 .cover img {
   width: 100%;
   border-radius: 10px;
 }
 
-.title {
-  margin-top: 15px;
-  font-size: 18px;
-  font-weight: bold;
+.song-header {
+  width: 350px;               
+  height: 50px;             
+  position: relative;       
+  margin-bottom: 10px;
 }
+
+.song-header img {
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 17px;
+  object-fit: cover;          
+  border-radius: 8px;
+}
+
+.title {
+  position: absolute;
+  top: 130%; 
+  left: 50%;
+  transform: translate(-50%, -50%);  /* benar-benar center */
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Pixelify Sans", sans-serif;
+  
+}
+
+.song-title { 
+  height: 40px;
+  object-fit: fill;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+}
+
+
 
 .artist {
   font-size: 14px;
