@@ -3,10 +3,18 @@ const playlist = [
   {
     title: "Candy",
     artist: "NCT Dream",
-    src: "assets/audio/NCT DREAM - Candy.mp3", 
-    cover: "assets/Candy - Winter Special Mini Album.jpeg"
+    src: "assets/audio/NCT DREAM - Candy.mp3",
+    cover: "assets/Candy - Winter Special Mini Album.jpeg",
+  },
+  {
+    title: "GO!",
+    artist: "CORTIS",
+    src: "assets/audio/CORTIS - GO!.mp3",
+    cover: "assets/CORTIS - Go .jpeg",
   },
 ];
+
+const coverImg = document.getElementById("cover-img");
 
 // urutan
 let songIndex = 0;
@@ -27,6 +35,7 @@ const songTitle = document.querySelector(".title");
 function loadSong(song) {
   songTitle.innerText = song.title;
   audio.src = song.src;
+  coverImg.src = song.cover;
 }
 
 function playSong() {
